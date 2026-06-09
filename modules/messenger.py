@@ -141,7 +141,7 @@ def webhook():
 
 def start_webhook():
     """Запуск Flask для Callback API"""
-    port = int(os.environ.get("PORT", 3000))
+    port = int(os.environ.get("PORT", 5000))
     print(f"🌐 Запуск веб-сервера на порту {port}")
     app.run(host='0.0.0.0', port=port)
 
